@@ -46,8 +46,18 @@ img{max-width:100%;display:block}
 .kicker{color:var(--gold);font-size:11px;letter-spacing:2.4px;text-transform:uppercase;font-weight:800;display:inline-flex;gap:8px;align-items:center;background:rgba(255,215,107,.12);border:1px solid rgba(255,215,107,.22);padding:7px 14px;border-radius:100px;margin-bottom:18px}
 .blink{animation:blink 1.3s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
-h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(38px,6vw,68px);line-height:.92;letter-spacing:-2.2px;font-weight:800}
-h1 em{font-style:normal;background:linear-gradient(135deg,var(--maroon2),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+h1{
+  font-family:'Syne', 'Space Grotesk', sans-serif;
+  font-weight:800;
+  letter-spacing:-2.5px;
+  text-shadow: 0 0 30px rgba(214,46,94,.25), 0 0 60px rgba(255,215,107,.15);
+}
+h1 em{
+  background: linear-gradient(135deg,#FF3B6E 0%, #FFD76B 40%, #FFFFFF 80%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  filter: drop-shadow(0 2px 20px rgba(255,215,107,.3));
+}
 .lead{color:var(--muted);max-width:640px;margin:20px 0 32px;font-size:17px;line-height:1.65}
 .btn{display:inline-flex;gap:8px;align-items:center;padding:14px 24px;border-radius:13px;font-weight:700;border:0;cursor:pointer;font-size:14.5px;transition:.25s}
 .btn-primary{background:linear-gradient(135deg,var(--maroon),var(--maroon2));color:#fff;box-shadow:0 12px 32px rgba(214,46,94,.38)}
@@ -65,7 +75,12 @@ h1 em{font-style:normal;background:linear-gradient(135deg,var(--maroon2),var(--g
 /* Sections */
 section{padding:96px 0;position:relative}
 .section-head{margin-bottom:44px}
-.section-head h2{font-family:'Space Grotesk';font-size:clamp(30px,4.2vw,44px);letter-spacing:-1.2px;line-height:.95;font-weight:800}
+.section-head h2{
+  font-family:'Syne', sans-serif;
+  font-weight:800;
+  letter-spacing:-1.5px;
+  text-shadow: 0 4px 20px rgba(0,0,0,.4);
+}
 .section-head p{color:var(--muted);max-width:580px;margin-top:14px;font-size:15px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
 .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--border);border-radius:20px;padding:26px;transition:.35s;position:relative;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.2)}
